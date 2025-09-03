@@ -22,7 +22,7 @@ jobs:
 
       # Setting max-parallel ensures that these jobs will run in serial,
       # not parallel, so we don't have conflicting tasks trying to
-      # push new commits.
+      # push new commits. 
       max-parallel: 1
 
     steps:
