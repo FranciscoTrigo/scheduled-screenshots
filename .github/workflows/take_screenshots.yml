@@ -67,7 +67,7 @@ jobs:
 
           npx playwright screenshot \
             --full-page \
-            --wait-for-timeout 10000 \
+            --wait-for-load-state networkidle \
             "${{ matrix.url }}" "$screenshot_path"
 
       - name: Push changes to GitHub
